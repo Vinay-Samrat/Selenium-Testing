@@ -1,4 +1,5 @@
 const additonalEnvironments = require("./environments");
+require('dotenv').config();
 
 if(!additonalEnvironments.test_settings)
   additonalEnvironments.test_settings = {};
@@ -11,8 +12,8 @@ const bstackOptions = {
     "sessionName" : "BStack nightwatch snippet",
     "source": "nightwatch:sample-sdk:v1.0",
     "seleniumVersion" : "4.0.0",
-    userName: '${BROWSERSTACK_USERNAME}' || 'YOUR_USERNAME',
-    accessKey: '${BROWSERSTACK_ACCESS_KEY}' || 'YOUR_ACCESS_KEY',
+    userName: process.env.BROWSERSTACK_USERNAME,
+    accessKey: process.env.BROWSERSTACK_ACCESS_KEY,
   },
 }
 

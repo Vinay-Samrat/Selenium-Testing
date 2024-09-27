@@ -3,34 +3,56 @@ module.exports = {
     default: {},
     env1: {
       desiredCapabilities: {
-        "browserName": "Chrome",
-        "bstack:options" : {
-          "browserVersion": "103.0",
-          "os": "Windows",
-          "osVersion": "11",
-          "debug": true
+        browserName: 'Firefox',
+        'bstack:options': {
+          browserVersion: '98.0',
+          os: 'Windows',
+          osVersion: '10',
+          debug: true
         }
       }
     },
     env2: {
       desiredCapabilities: {
-        "browserName": "Firefox",
-        "bstack:options" : {
-          "browserVersion": "102.0",
-          "os": "Windows",
-          "osVersion": "10",
-          "debug": true
+        browserName: 'Safari',
+        'bstack:options': {
+          browserVersion: '15.6',
+          os: 'OS X',
+          osVersion: 'Monterey',
+          debug: true
         }
       }
     },
     env3: {
       desiredCapabilities: {
-        "browserName": "Safari",
-        "bstack:options" : {
-          "browserVersion": "14.1",
-          "os": "OS X",
-          "osVersion": "Big Sur",
-          "debug": true
+        browserName: 'Chromium',
+        'bstack:options': {
+          deviceOrientation: 'portrait',
+          deviceName: 'iPhone 13',
+          osVersion: '15',
+          debug: true
+        }
+      }
+    },
+    env4: {
+      desiredCapabilities: {
+        browserName: 'Safari',
+        'bstack:options': {
+          deviceName: 'iPhone X',
+          osVersion: '12',
+          realMobile: true,
+          debug: true
+        }
+      }
+    },
+    env5: {
+      desiredCapabilities: {
+        browserName: 'Safari',
+        'bstack:options': {
+          deviceName: 'iPhone 8',
+          osVersion: '11',
+          realMobile: true,
+          debug: true
         }
       }
     }
